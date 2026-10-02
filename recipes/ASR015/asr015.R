@@ -15,7 +15,7 @@ asr015 <- asreml(
   data = d010
 )
 
-wald(asr015)
+wald(asr015, denDF = 'numeric')$Wald
 
 summary(asr015)$varcomp
 

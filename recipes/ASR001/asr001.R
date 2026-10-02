@@ -17,7 +17,7 @@ wald(asr001, denDF = 'numeric')$Wald
 
 summary(asr001)$varcomp
 
-vpredict(asr001, h2 ~ V1/(V1+V2))
+vpredict(asr001, H2 ~ V1/(V1+V2))
 
 BLUP <- summary(asr001, coef = TRUE)$coef.random
 head(BLUP)

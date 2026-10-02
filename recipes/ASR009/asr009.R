@@ -18,7 +18,7 @@ summary(asr009, coef = TRUE)$coef.fixed
 
 summary(asr009)$varcomp
 
-vpredict(asr009, h2 ~ V1/(V1+V4))
+vpredict(asr009, H2 ~ V1/(V1+V4))
 
 BLUP <- summary(asr009, coef = TRUE)$coef.random
 head(BLUP)

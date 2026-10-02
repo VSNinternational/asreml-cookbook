@@ -9,8 +9,6 @@ d022genomic_matrix <- data.matrix(d022genomic[,c(2:3490)])
 
 row.names(d022genomic_matrix) <- d022genomic$lines 
 
-d022genomic_matrix[1:6,1:6]
-
 d022genomic_matrix <- qc.filtering(M=d022genomic_matrix, maf = 0.05, marker.callrate = 0.2, 
                        ind.callrate = 0.20, impute = FALSE, plots = FALSE)
 

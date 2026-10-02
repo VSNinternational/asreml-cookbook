@@ -20,4 +20,4 @@ summary(asr002, coef = TRUE)$coef.fixed
 
 summary(asr002)$varcomp
 
-vpredict(asr002, h2 ~ V1/(V1+V2))
+vpredict(asr002, H2 ~ V1/(V1+V2))

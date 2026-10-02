@@ -34,6 +34,6 @@ res<-residuals(asr017)
 which.max(res)
 which.min(res)
 
-d021_r$height_8[d021_r$height_8==187] <- NA
-d021_r$height_8[d021_r$height_8==311] <- NA
+d021_r$height_8[which.max(res)] <- NA
+d021_r$height_8[which.min(res)] <- NA
 

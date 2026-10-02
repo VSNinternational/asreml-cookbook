@@ -18,7 +18,7 @@ d022_Gmatrix <- G.matrix(M=d022genomic_matrix$M.clean, method = "VanRaden")$G
 
 d022_Gmatrix[1:6,1:6]
 
-Ginv <- G.inverse(d022_Gmatrix, sparseform = TRUE)
+Ginv <- G.inverse(G=d022_Gmatrix, sparseform = TRUE)
 
 d022_Gmatrix_bl <- G.tuneup(G=d022_Gmatrix, blend = TRUE, pblend=0.02)$Gb
 

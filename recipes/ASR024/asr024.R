@@ -27,11 +27,10 @@ par(mfrow = c(1, 2))
 hist(res$e, breaks = 15, xlab = "residuals", main = "asr024")
 hist(rest$e, breaks = 20, xlab = "residuals", main = "asr024t")
 
-wald(asr024, denDF = 'numeric')$Wald
+wald(asr024t, denDF = 'numeric')$Wald
 
 summary(asr024t)$varcomp
 
 preds <- predict(asr024t, classify = 'trt')$pvals
-as.data.frame(preds)
+preds <- as.data.frame(preds)
 preds$back_trans <- exp(preds$predicted.value) - 1
-preds

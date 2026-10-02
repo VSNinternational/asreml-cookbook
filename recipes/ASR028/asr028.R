@@ -3,7 +3,6 @@ library(asreml)
 
 d014 <- read.table("MAIZE_HYBRIDS.txt", header = TRUE, na.strings='NA')
 
-d014$indiv <- as.factor(d014$indiv)
 d014$sire <- as.factor(d014$sire)
 d014$dam <- as.factor(d014$dam)
 
